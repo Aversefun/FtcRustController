@@ -1,0 +1,15 @@
+{
+    "rust-analyzer.check.command": "clippy",
+    "rust-analyzer.linkedProjects": [
+        "TeamCode/team_code_rust/Cargo.toml"
+    ],
+    "terminal.integrated.env.linux": {
+        "ANDROID_HOME": "${env:HOME}/Android/Sdk"
+    },
+    "terminal.integrated.env.windows": {
+        "ANDROID_HOME": "${env:USERPROFILE}\\Android\\Sdk"
+    },
+    "terminal.integrated.env.osx": {
+        "ANDROID_HOME": "${env:HOME}/Android/Sdk"
+    },
+}

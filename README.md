@@ -1,3 +1,14 @@
+## RUST NOTICE
+
+Start out by installing [rustup](https://rustup.rs). Then, run:
+
+```shell
+rustup target add armv7-linux-androideabi
+rustup target add aarch64-linux-android
+```
+
+to add the targets, 
+
 ## NOTICE
 
 This repository contains the public FTC SDK for the DECODE (2025-2026) competition season.
