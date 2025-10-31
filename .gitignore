@@ -81,4 +81,7 @@ lint/tmp/
 # lint/reports/
 
 # rust-analyzer is sometimes weird
-/target
+/target/rust-analyzer
+
+# JNI compiled libraries
+jniLibs/

@@ -31,7 +31,7 @@ dependencies {
 
 tasks.register("buildRust", Exec) {
     workingDir "$projectDir/team_code_rust"
-    commandLine "cargo", "ndk", "-t", "arm64-v8a", "-t", "armeabi-v7a", "--platform", "21", "--build-type", "release", "build", "-o", "../jniLibs"
+    commandLine "cargo", "ndk", "-t", "arm64-v8a", "-t", "armeabi-v7a", "--platform", "29", "build", "--release", "-o", "../jniLibs"
 }
 
 tasks.configureEach { task ->
