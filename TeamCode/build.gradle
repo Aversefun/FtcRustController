@@ -27,17 +27,19 @@ dependencies {
     implementation project(':FtcRobotController')
 }
 
-// Note to teams: DO NOT TOUCH.
+// Note to teams: DO NOT TOUCH BELOW.
 
 apply plugin: 'org.mozilla.rust-android-gradle.rust-android'
 
 cargo {
-    module  = "../team_code_rust"
+    module  = "team_code_rust"
     libname = "team_code_rust"
     targets = ["arm", "arm64"]
+    apiLevel = 21
+    extraCargoBuildArguments = ["--lib"]
 }
 
-tasks.whenTaskAdded { task ->
+tasks.configureEach { task ->
     if ((task.name == 'javaPreCompileDebug' || task.name == 'javaPreCompileRelease')) {
         task.dependsOn 'cargoBuild'
     }
