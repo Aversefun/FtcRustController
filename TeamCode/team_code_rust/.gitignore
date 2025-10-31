@@ -1,3 +1,5 @@
 target/
 *.pdb
 **/*.rs.bk
+
+# keep Cargo.lock

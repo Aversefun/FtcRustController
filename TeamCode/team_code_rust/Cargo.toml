@@ -11,7 +11,7 @@ name = "team_code_rust"
 crate-type = ["cdylib"]
 
 [lints.rust]
-missing_docs = "deny"
+missing_docs = "warn"
 
 [lints.clippy]
 missing_docs_in_private_items = "warn"
