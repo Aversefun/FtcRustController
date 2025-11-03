@@ -9,7 +9,7 @@ use ftc::{ftc, hardware::DcMotor};
     teleop,
     group = "Example",
 )]
-fn my_linear_op_mode(ctx: &mut ftc::FtcContext) {
+fn my_linear_op_mode(ctx: &ftc::FtcContext) {
     // equivalent to hardwareMap.get(DcMotor.class, "motor") in Java:
     let motor = ctx.hardware().get::<DcMotor>("motor");
     motor.set_direction(ftc::hardware::Direction::Forward);
