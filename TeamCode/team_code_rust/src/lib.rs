@@ -24,4 +24,8 @@ fn my_linear_op_mode(ctx: &ftc::FtcContext) {
     motor.set_power(0.5);
     ctx.sleep_s(2.0);
     motor.set_power(0.0);
+
+    ctx.gamepad1().on_press_a(move |_| {
+        motor.set_power(0.5);
+    });
 }
